@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+.card-slideshow {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  transition: transform 0.5s ease;
+  overflow-x: hidden;
+}
+
+.card {
+  flex: 0 0 20%; /* Define a largura de cada card */
+  margin: 0 10px; /* Espaçamento entre os cards */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.card.active {
+  flex: 0 0 30%; 
+  margin-left: 1300px;/* Define a largura do card ativo */
+  opacity: 1;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.icon-circle img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex: 0 0 50%;
+  }
+}
+
+
+#head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com transparência */
+}
+
+
+h1 {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+}
+#home h1{
+  color: black;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: 900px;
+  margin-top: 10px;
+
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: lightgray; 
+ 
+}
+
+.services-list li a {
+  color: black; /* Cor do texto dentro da lista de serviços */
+}
+
+.services-list li a:hover {
+  color: darkgray; /* Mudar a cor do texto ao passar o mouse na lista de serviços */
+}
+
+.arrow {
+  margin-left: 5px;
+}
+
+#h1home {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #333; /* cor do texto */
+}
+.cart {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Estilo para cada card */
+.carr {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Largura fixa para cada card */
+}
+
+/* Estilo para a imagem dentro do card */
+.carr img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Estilo para o título dentro do card */
+.carr h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+#duvida1{display: none;}
+#duvida2{display: none;}
+#duvida3{display: none;}
+#duvida4{display: none;}
+#duvida5{display: none;}
+#duvida6{display: none;}
+
+/* Estilo para o texto de descrição dentro do card */
+.carr p {
+  margin-top: 10px;
+  color: #666;
+}
+.card-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+.card {
+  width: 200px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.icon-circle {
+  width: 100px;
+  height: 100px;
+  background-color:blue; /* cor de fundo do círculo */
+  border-radius: 50%; /* torna o div um círculo */
+  margin: 0 auto 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+h2 {
+  color: white;
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+p {
+  color: black;
+  font-size: 18px;
+}
+#empresa, #sobre, #contato,#servicos{
+  display: none;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #333333;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #dddddd;
+}
